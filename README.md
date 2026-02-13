@@ -1,15 +1,7 @@
-# moomoo-hack
+this is a really basic template for all the skids who cant make shit
 
-To install dependencies:
+this obviously isnt my best work lol i rushed it so bad
+some things might be broken/can be done better
+^ actually a LOT of stuff can be improved.
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.3.9. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+anyways bye im never returning after this

@@ -3,6 +3,7 @@
   "module": "index.js",
   "type": "module",
   "devDependencies": {
+    "@biomejs/biome": "^2.3.14",
     "@types/bun": "latest"
   },
   "scripts": {
