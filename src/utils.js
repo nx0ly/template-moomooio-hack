@@ -12,4 +12,11 @@ export default class Utils {
     static getDirArray(a, b) {
         return Math.atan2(b[1] - a[1], b[0] - a[0]);
     }
+
+    static normalizeAngle(a) {
+        while (a <= -Math.PI) a += Math.PI * 2;
+        while (a > -Math.PI) a -= Math.PI * 2;
+
+        return a;
+    }
 }

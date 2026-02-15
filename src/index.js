@@ -62,13 +62,14 @@ class Game {
             case "D": {
                 let [d, ismine] = data;
 
-                let player = new Player(d[0], d[1], d[2], d[3], d[4], d[5], d[6], d[7], d[8], d[9], this.quadtree);
+                let existing = Utils.getPlayerBySid(data[1]);
+                let player = existing || new Player(d[0], d[1], d[2], d[3], d[4], d[5], d[6], d[7], d[8], d[9], this.quadtree);
 
                 if (ismine) {
                     this.myPlayer = player;
                 }
 
-                this.players.push(player);
+                !existing && this.players.push(player);
             }
 
             case "a": {

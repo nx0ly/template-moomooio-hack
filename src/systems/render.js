@@ -7,6 +7,8 @@ let cam = [0, 0];
 let oldtime = 0;
 
 export default function render(delta) {
+    console.log("<", game.players.length)
+
     if (!game.ctx) return;
     if (!game.myPlayer) {
         cam[0] = cam[1] = 7200;

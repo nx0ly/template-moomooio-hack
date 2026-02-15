@@ -4,10 +4,12 @@
   "type": "module",
   "devDependencies": {
     "@biomejs/biome": "^2.3.14",
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "serve": "^14.2.5"
   },
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js && bun x serve .",
+    "dev": "bun --watch build.js & serve . -l 3000"
   },
   "dependencies": {
     "esbuild": "^0.27.3",
